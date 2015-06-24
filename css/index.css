@@ -1,0 +1,55 @@
+*
+{
+	margin:0px;
+	padding:0px;
+}
+
+.body
+{
+	background:url("../images/background1.jpg");
+}
+
+.header
+{
+	height:220px;
+	width:100%;
+	background:url("../img/head03.jpg");
+	background-size:cover; 
+}
+
+.header .my_img
+{
+	margin-left:50%;
+	width:90px;
+	height:95px;
+	background-image:url("../img/yudesong.jpg");
+	border: 3px #49BEAB solid;
+	-webkit-border-radius: 100px; 
+}
+
+.content
+{	
+	margin:0px;
+	padding:0px;
+	width:84%;
+	height:40%;
+	margin-left:9%;
+	margin-top:40px;
+	
+}
+
+.message
+{
+	width:20%;
+	padding:4px;
+	margin-left:10%;
+	margin-top:30%;
+}
+
+.local
+{
+	width:40%;
+	margin-left:28%;
+	margin-top:30%;
+}
+

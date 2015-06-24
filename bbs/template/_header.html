@@ -1,0 +1,66 @@
+<!-- IF loginInfo.uid > "0" -->
+<div class="header web-bg">
+  <div class="top-nav">
+    <ul class="left-nav">
+      <li>
+        <a<!-- IF headerNavi == "home" --> class="home"<!-- ENDIF --> title="主页" href="./"><span class="web-icon nav-home"></span>主页</a>
+      </li>
+      <li>
+        <a<!-- IF headerNavi == "at" --> class="home"<!-- ENDIF --> title="提醒" href="./notification.php"><span class="web-icon nav-at"></span>提醒</a>
+      </li>
+      <li>
+        <a<!-- IF headerNavi == "me" --> class="home"<!-- ENDIF --> title="我" href="./user.php"><span class="web-icon nav-me"></span>我</a>
+      </li>
+    </ul>
+    <div class="right-nav">
+      <div class="search">
+        <form method="get" action="search.php" onsubmit="return searchPHPSay();">
+          <input id="search-query" class="search-input" type="text" spellcheck="false" autocomplete="off" name="q" placeholder="搜索">
+          <span class="search-icon">
+            <button class="web-icon nav-search" type="submit" tabindex="-1"></button>
+          </span>
+          <input id="search-query-hint" class="search-input search-hinting-input" type="text" spellcheck="false" autocomplete="off" disabled="disabled">
+        </form>
+      </div>
+      <div class="settings">
+        <a id="settings"<!-- IF headerNavi == "settings" --> class="home"<!-- ENDIF --> title="设置" href="./settings.php"><span class="web-icon nav-settings"></span></a>
+        <div class="dropdown-menu">
+          <div class="arrow-top"></div>
+          <ul>
+            <li><a href="./settings.php">头像</a></li>
+            <li><a href="./settings.php?with=email">邮箱</a></li>
+            <li><a href="./settings.php?with=password">密码</a></li>
+            <li class="logout"><a href="./passport.php?do=logout">退出</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="web-bg write">
+        <a class="web-bg write-btn" title="撰写新微文" href="#write"><i class="web-icon nav-write"></i></a>
+      </div>
+      <script>rightNavBind();</script>
+    </div>
+  </div>
+</div>
+<!-- ELSE -->
+<div class="header web-bg">
+  <div class="top-nav">
+    <ul class="left-nav">
+      <li><a title="{:PHPSayConfig.sitename}" href="./"><span class="web-icon nav-home"></span>{:PHPSayConfig.sitename}</a></li>
+    </ul>
+    <div class="right-nav">
+      <div class="search">
+        <form method="get" action="search.php" onsubmit="return searchPHPSay();">
+          <input id="search-query" class="search-input" type="text" spellcheck="false" autocomplete="off" name="q" placeholder="搜索">
+          <span class="search-icon">
+            <button class="web-icon nav-search" type="submit" tabindex="-1"></button>
+          </span>
+          <input id="search-query-hint" class="search-input search-hinting-input" type="text" spellcheck="false" autocomplete="off" disabled="disabled">
+        </form>
+      </div>
+      <div class="signin">
+        <a onclick="goSignIn();"><small>已有账号?</small>登录</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ENDIF -->

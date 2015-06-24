@@ -1,0 +1,15 @@
+<div class="mini-profile">
+  <div class="profile-summary">
+    <a href="user.php">
+      <div class="profile-content">
+        <img src="{:loginInfo.avatar}" id="profile-avatar"><b>{:loginInfo.nickname}</b><small>查看我的个人页</small>
+      </div>
+    </a>
+  </div>
+  <div class="profile-bottom">
+    <script type="text/javascript">showNotifications();</script>
+    <a href="javascript:;" onclick="notificationRequest();" class="notify-count"><strong>{:notificationNumber}</strong>提醒</a>
+    <a href="user.php?list=favorite" class="favorite-count"><strong>{:favoriteNumber}</strong>收藏</a>
+    <a href="balance.php" class="balance-count"><strong>{:memberBalance}</strong>社区币</a>
+  </div>
+</div>

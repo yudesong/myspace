@@ -1,0 +1,27 @@
+<!-- BEGIN topicList.list -->
+<li class="stream-item" id="item-{:tid}">
+  <div class="stream-content" data="{:tid}">
+    <a href="user.php?id={:uid}" class="item-user"><img class="item-avatar" src="{:avatar}" alt="{:nickname}"><strong class="item-nickname">{:nickname}</strong></a>
+    <small class="time"><a href="t.php?id={:tid}">{:posttime}</a></small>
+    <p class="item-message">{:message}</p>
+    <!-- IF smallimg != "" -->
+    <div class="item-picture">
+      <img src="{:smallimg}" data-expand="{:bigimage}" alt="" title="">
+    </div>
+    <!-- ENDIF -->
+    <div class="stream-item-footer">
+      <div class="item-actions">
+        <a onclick="favTopic({:tid});" id="favTopic-{:tid}"><span class="web-icon icon-fav"></span>收藏</a>
+        <!-- IF top.loginInfo.group > "1" -->
+        <a onclick="deleteTopic({:tid},0);" id="deleteTopic-{:tid}"><span class="web-icon icon-trash"></span>删除</a>
+        <!-- ENDIF -->
+      </div>
+      <!-- IF top.clubList.current.cid == "0" -->
+      <a href="./?cid={:cid}">{:clubname}</a>
+      <span class="point">•</span>
+      <!-- ENDIF -->
+      <a href="t.php?id={:tid}" id="comment-{:tid}"><!-- IF comments > "0" --><strong>{:comments}</strong> 回复<!-- ELSE -->暂无回复<!-- ENDIF --></a>
+    </div>
+  </div>
+</li>
+<!-- END -->

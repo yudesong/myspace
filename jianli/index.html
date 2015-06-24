@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="utf-8">
+	<title>个人简历</title>
+	<link href="css/reset.css" rel="stylesheet" type="text/css" />
+	<link href="css/960.css" rel="stylesheet" type="text/css" />
+	<link href="css/bootstrap-theme.css" rel="stylesheet" type="text/css" />
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />	
+	<link href="css/styles.css" rel="stylesheet" type="text/css" />
+	<link href="fancybox/jquery.fancybox-1.3.4.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>	
+	<script type="text/javascript" src="js/smooth-scroll.js"></script>
+	<script type="text/javascript" src="js/jquery.sticky.js"></script>
+	<script type="text/javascript" src="fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+	<script type="text/javascript" src="js/jquery.easing-1.3.pack.js"></script>
+	<script type="text/javascript" src="fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+	<script type="text/javascript" src="cform.js"></script>
+	
+<script type="text/javascript"> // sticky nav bar 
+  $(document).ready(function(){
+    $("nav").sticky({topSpacing:0});
+  });
+</script>
+
+<script type="text/javascript"> // fancybox
+$(document).ready(function() {
+
+	/* This is basic - uses default settings */
+	
+	$("a.single_image").fancybox();
+	
+	/* Using custom settings */
+	
+	$("a#inline").fancybox({
+		'hideOnContentClick': true
+	});
+
+	/* Apply fancybox to multiple items */
+	
+	$("a.group").fancybox({
+		'transitionIn'	:	'elastic',
+		'transitionOut'	:	'elastic',
+		'speedIn'		:	600, 
+		'speedOut'		:	200, 
+		'overlayShow'	:	false
+	});
+	
+});
+</script>
+	
+</head>
+
+
+<div class="topbar"></div> 
+<div id="intro">
+	<div class="title">
+		<h1>
+		<span class="small"><img src="img/yu.JPG" style="width:200px;height:200px;margin:0px;border: 3px #49BEAB solid;-webkit-border-radius: 200px; "></span><br />
+		<span style="font-size:30px;font-family:Helvetica Neue,Helvetica,Arial,sans-serif;color:black;">于德松</br><span style="font-size:30px;color:black;">应聘岗位：Web 开发&nbsp;/&nbsp;软件开发</br>工作地点：深圳&nbsp;/&nbsp;广州&nbsp;&nbsp;&nbsp;&nbsp;</span><br />
+		<span class="intro_line"></span><span class="amp"></span><span class="intro_line"></span><br />
+		<span class="small"></span></h1>
+	</div> 
+</div> 
+
+<nav>
+	<ul>
+		<li><a href="#info">个人信息</a></li>
+		<li><a href="#edu">教育背景</a></li>
+		<li><a href="#zhengshu">证书/奖项</a></li>
+		<li><a href="#skill">专业技能</a></li>
+		<li><a href="#jingli">项目/实习经历</a></li>
+		<li><a href="#ping">自我评价</a></li>		
+	</ul>
+</nav>
+
+<div id="info">
+	<div class="container_16">
+	
+		<div class="subheader">
+			<div class="subheader_line"></div><h2>个人信息</h2><div class="subheader_line"></div>
+		</div>
+			
+		<div class="jianli">
+			<img src="img/jianli.jpg"/>
+		</div>
+</div>
+		</div>
+		<div class="clear"></div>
+	</div> <!-- end .container_16 -->
+</div>
+
+
+<div class="services_bg_bottom"></div>
+
+<div id="edu">
+	<div class="container_16">
+		
+		<div class="subheader">
+			<div class="subheader_line"></div><h2>教育背景</h2><div class="subheader_line"></div>
+		</div>
+		
+		<div class="jianli">
+			<img src="img/edu.jpg"></img>	
+		</div>
+	</div> <!-- end .container_16 -->
+</div> <!-- end #work -->
+
+<div class="services_bg_bottom"></div>
+
+<div id="zhengshu">
+	<div class="container_16">
+	
+		<div class="subheader">
+			<div class="subheader_line"></div><h2>证书奖项</h2><div class="subheader_line"></div>
+		</div>
+
+		<div class="jianli">
+			<img src="img/zhengshu.jpg"/>
+		</div>
+		
+	</div> <!-- end .container_16 -->
+</div> <!-- end #services -->
+
+<div class="services_bg_bottom"></div>
+
+<div id="skill">
+	<div class="container_16">
+	
+		<div class="subheader">
+			<div class="subheader_line"></div><h2>专业技能</h2><div class="subheader_line"></div>
+		</div>
+	
+		<div class="jianli">
+			<img src="img/skill.jpg"/>
+		</div>
+		
+	</div> <!-- end .container_16 -->
+</div> <!-- end #about -->
+
+
+<div class="services_bg_bottom"></div>
+
+<div id="jingli">
+	<div class="container_16">
+	
+		<div class="subheader">
+			<div class="subheader_line"></div><h2>项目/实习经历</h2><div class="subheader_line"></div>
+		</div>
+		
+
+			<div class="jianli">
+			<div style="margin-top:0px;width:85%;">
+			<div class="carousel slide" id="carousel-450042" style="margin:0px;padding:0px;">
+				<ol class="carousel-indicators" style="margin:0px;padding:0px;">
+					<li data-slide-to="0" data-target="#carousel-450042" style="margin:0px;padding:0px;">
+					</li>
+					<li data-slide-to="1" data-target="#carousel-450042" class="active" style="margin:0px;padding:0px;">
+					</li>
+				</ol>
+				<div class="carousel-inner" style="margin:0px;padding:0px;">
+					<div class="item" style="margin:0px;padding:0px;">
+						<img alt="" src="img/xiangmu1.jpg" style="margin:0px;padding:0px;"/>
+					</div>
+					<div class="item" style="margin:0px;padding:0px;">
+						<img alt="" src="img/xiangmu2.jpg" style="margin:0px;padding:0px;"/>
+					</div>					
+					<div class="item" style="margin:0px;padding:0px;">
+						<img alt="" src="img/xiangmu3.jpg" style="margin:0px;padding:0px;"/>
+					</div>	
+					<div class="item" style="margin:0px;padding:0px;">
+						<img alt="" src="img/xiangmu4.jpg" style="margin:0px;padding:0px;"/>
+					</div>						
+					<div class="item active">
+						<img alt="" src="img/shixi.jpg" />
+					</div>
+				</div> <a data-slide="prev" href="#carousel-450042" class="left carousel-control">‹</a> <a data-slide="next" href="#carousel-450042" class="right carousel-control">›</a>
+			</div>
+		</div>
+		</div>
+	</div> <!-- end .container_16 -->
+</div> <!-- end #contact -->
+
+<div class="services_bg_bottom"></div>
+
+
+<div id="ping">
+	<div class="container_16">
+	
+		<div class="subheader">
+			<div class="subheader_line"></div><h2>自我评价</h2><div class="subheader_line"></div>
+		</div>
+		
+		<div class="jianli">
+			<img src="img/ping.jpg"/>
+		</div>
+		
+	</div> <!-- end .container_16 -->
+</div> <!-- end #contact -->
+
+<div class="services_bg_bottom"></div>
+
+<footer>
+	<p>&copy; 2015 YuDesong All rights reserved</p>
+</footer>

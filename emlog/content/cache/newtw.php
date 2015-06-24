@@ -1,0 +1,1 @@
+<?php exit;//a:1:{i:0;a:7:{s:2:"id";s:1:"2";s:7:"content";s:107:"这是我自己的博客系统！开源的哟！体积小，感觉很好用，推荐大家使用！[玫瑰]";s:3:"img";s:0:"";s:6:"author";s:1:"1";s:4:"date";s:10:"1432123695";s:8:"replynum";s:1:"0";s:1:"t";s:200:"这是我自己的博客系统！开源的哟！体积小，感觉很好用，推荐大家使用！<img title="[玫瑰]" src="http://localhost/emlog/src/admin/editor/plugins/emoticons/images/27.gif"/>";}}
