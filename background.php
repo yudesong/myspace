@@ -1,9 +1,10 @@
-<div style="margin-left:20px;margin-right:20px;margin-top:5px;">
+<div style="margin-left:0px;margin-right:0px;margin-top:0px;">
 		<img src="images/background.jpg" width="100%"/>
 </div>
 <div>
-<div class="container-fluid">
-	<div class="row-fluid">
+<div style="margin-left:0px;margin-right:0px;padding:0px;">
+<div class="container-fluid" >
+	<div class="row-fluid" style="margin-left:0px;margin-right:0px;">
 		<div class="span12">
 			<div class="navbar navbar-inverse">
 				<div class="navbar-inner">
@@ -247,7 +248,15 @@
 											<a href="linux_test.php">Linux面试题</a>
 										</li>															
 									</ul>
-								</li>									
+								</li>	
+								<li class="dropdown">
+									 <a data-toggle="dropdown" class="dropdown-toggle" href="#">实习项目<strong class="caret"></strong></a>
+									<ul class="dropdown-menu">
+										<li>
+											<a href="kafka.php">Kafka</a>
+										</li>														
+									</ul>
+								</li>								
 							</ul>
 							<ul class="nav pull-right">
 								<li class="divider-vertical">
@@ -256,18 +265,18 @@
 									 <a data-toggle="dropdown" class="dropdown-toggle" href="#">开发工具<strong class="caret"></strong></a>
 									<ul class="dropdown-menu">
 										<li>
-											<a href="#">Eclipse</a>
+											<a href="http://linux.chinaunix.net/techdoc/desktop/2009/07/06/1122020.shtml" target="_blank">Vim</a>
 										</li>
 										<li>
-											<a href="#">SVN</a>
+											<a href="http://www.cnblogs.com/armyfai/p/3985660.html" target="_blank">SVN</a>
 										</li>
 										<li>
-											<a href="#">Git</a>
+											<a href="Git.php">Git</a>
 										</li>
 										<li class="divider">
 										</li>
 										<li>
-											<a href="#">其他</a>
+											<a href="http://tool.oschina.net/commons?type=5" target="_blank">HTTP状态码</a>
 										</li>
 									</ul>
 								</li>
@@ -278,5 +287,6 @@
 			</div>
 		</div>
 	</div>
+</div>
 </div>
 </div>

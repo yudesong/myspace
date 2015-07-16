@@ -5,8 +5,8 @@
 	<link rel='stylesheet'  href='css/shCoreDefault.css' type='text/css' media='all' />
 	<link href="css/bootstrap.min.css" rel="stylesheet"/>
 	<link href="css/bootstrap-theme.css" rel="stylesheet"/>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>	
+    	<script src="js/jquery.min.js"></script>
+    	<script src="js/bootstrap.min.js"></script>	
 	<style type='text/css'>
 	.syntaxhighlighter,
 	.syntaxhighlighter a,
@@ -293,52 +293,8 @@ Input {font-family: verdana;font-size: 9pt;text-decoration: none;background-colo
 <h1></h1>
 </div>
 <div class="entry">
-<h1>MapReduce教程</h1>
-<strong>MapReduce介绍</strong>
-<p>MapReduce是一种编程模型，用于大规模数据集（大于1TB）的并行运算。概念"Map（映射）"和"Reduce（归约）"，和他们的主要思想，都是从函数式编程语言里借来的，还有从矢量编程语言里借来的特性。他极大地方便了编程人员在不会分布式并行编程的情况下，将自己的程序运行在分布式系统上。 当前的软件实现是指定一个Map（映射）函数，用来把一组键值对映射成一组新的键值对，指定并发的Reduce（归约）函数，用来保证所有映射的键值对中的每一个共享相同的键组。
-<strong>MapReduce基本流程</strong>
-<p>MapReduce的基本流程是，框架会使用FileInputFormat读取文件，默认会根据文件大小的进行记录拆分，这里拆分器叫做InputSplitter。通过InputSplitter将文件拆成若干块，后面也就有若干个mapper与之对应。</p>
-<p>InputSplitter里面使用RecordReader对文件块的记录进行读取，生成key/value的pair，调用mapper的map函数去处理。
-<p>当然这些流程中有些可以定制，比如InputSplitter的算法可以修改，RecordReader也是可以定制。而且还有一个非常有效的方法，可以避免mapper将过多的数据传递给reducer。
-<p>现在想从日志中提取数据，部分日志文件如下：
-<div style="background:black;font-color:white">
-2014-05-10 13:36:40,140307000287,536dbacc4700aab274729cca,login
-2014-05-10 13:37:46,140310000378,536dbae74700aab274729ccb,login
-2014-05-10 13:39:20,140310000382,536dbb284700aab274729ccd,login
-2014-05-10 13:39:31,140331001080,536dbb864700aab274729ccf,login
-2014-05-10 13:39:45,140331001105,536dbba04700aab274729cd4,login
-2014-05-10 13:39:45,140328000969,536dbba04700aab274729ce4,login
-2014-05-10 13:39:45,140408001251,536dbba04700aab274729cd8,login
-2014-05-10 13:39:45,140328000991,536dbba04700aab274729ce9,login
-2014-05-10 13:39:45,140324000633,536dbba14700aab274729cf5,login
-2014-05-10 13:39:45,140331001077,536dbba04700aab274729cdd,login
-2014-05-10 13:39:45,140408001242,536dbba04700aab274729cd7,login
-2014-05-10 13:39:45,140327000941,536dbba14700aab274729cf1,login
-2014-05-10 13:39:45,140408001265,536dbba04700aab274729ce5,login
-2014-05-10 13:39:45,140324000673,536dbba04700aab274729cd3,login
-2014-05-10 13:39:45,140331001066,536dbba04700aab274729cd5,login
-2014-05-10 13:39:45,140408001292,536dbba14700aab274729cee,login
-2014-05-10 13:39:45,140328000966,536dbba14700aab274729cec,login
-2014-05-10 13:39:45,140312000501,536dbba04700aab274729ce1,login
-2014-05-10 13:39:45,140306000216,536dbba14700aab274729d02,login
-2014-05-10 13:39:45,140327000856,536dbba04700aab274729ce2,login
-2014-05-10 13:39:46,140328000985,536dbba14700aab274729cf7,login
-2014-05-10 13:39:46,140306000245,536dbba14700aab274729d0d,login
-2014-05-10 13:39:46,140326000797,536dbba14700aab274729cf6,login
-2014-05-10 13:39:46,140328000993,536dbba14700aab274729d12,login
-2014-05-10 13:39:46,140331001115,536dbba14700aab274729d10,login
-2014-05-10 13:39:46,140325000744,536dbba04700aab274729ce0,login
-2014-05-10 13:39:46,140328000982,536dbba14700aab274729d0a,login
-2014-05-10 13:39:46,140331001063,536dbba04700aab274729ce3,login
-2014-05-10 13:39:46,140331001067,536dbba14700aab274729d1c,login
-2014-05-10 13:39:46,140401001157,536dbba04700aab274729ce8,login
-2014-05-10 13:39:46,140408001216,536dbba14700aab274729cef,login
-2014-05-10 13:39:46,140401001174,536dbba14700aab274729d27,login
-2014-05-10 13:39:46,140306000215,536dbba04700aab274729cde,login
-2014-05-10 13:39:46,140331001064,536dbba04700aab274729cdc,login
-2014-05-10 13:39:46,140326000825,536dbba04700aab274729cd9,login
-2014-05-10 13:39:46,140408001294,536dbba14700aab274729d0f,login
-</div>
+<h3>Git教程</h3>
+
 
 
 
