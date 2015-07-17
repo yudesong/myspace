@@ -329,7 +329,7 @@ console.log("server start at 127.0.0.1:8080");
 (5)安装依赖包</br>
 	npm install</br>
 	npm install supervisor</br>
-(6)在浏览器中输入：http://localhost:3000</br>
+(6)运行supervisor .bin/www在浏览器中输入：http://localhost:3000</br>
 (7) Ejs模板使用</br>
 	修改app.js</br>
 	添加：var ejs = require("ejs")</br>
